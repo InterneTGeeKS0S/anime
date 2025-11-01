@@ -30,7 +30,7 @@ init {
     private val kwikDUrl = Regex("action=\"([^\"]+)\"")
     private val kwikDToken = Regex("value=\"([^\"]+)\"")
 
-    private val mainUrl = "https://animepahe.ru"
+    private val mainUrl = "https://animepahe.si"
     override suspend fun animeDetails(contentLink: String): AnimeDetails =
         withContext(Dispatchers.IO) {
             /*  val id =
